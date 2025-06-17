@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="style.css" />
+  <title>Form</title> 
+</head>
+
+<body>
+  <div class="container">
+    <!-- Form with submit and reset functions -->
+    <form class="form" onsubmit="return checkPass()" onreset="resetMsg()">
+
+      <div class="toggle-mode">
+        <!-- Button to switch dark/light mode -->
+        <button type="button" onclick="toggleDarkMode()">mode</button>
+      </div>
+
+      <h1>App Form</h1> <!-- Form title -->
+
+      <!-- First Name input -->
+      <label>First Name</label>
+      <input type="text" placeholder="First Name" />
+
+      <!-- Last Name input -->
+      <label>Last Name</label>
+      <input type="text" placeholder="Last Name" />
+
+      <!-- Date of Birth input -->
+      <label>Date of Birth</label>
+      <input type="date" />
+
+      <!-- Gender radio buttons -->
+      <div class="gender-section"><br>
+        <h5>Gender</h5>
+        <label><input type="radio" name="gender" /> Male</label>
+        <label><input type="radio" name="gender" /> Female</label>
+      </div><br>
+
+      <!-- Email input -->
+      <label>Email Address</label>
+      <input type="email" placeholder="@example.com" />
+
+      <!-- Password input -->
+      <label>Password</label>
+      <input type="password" id="pass" placeholder="At least 6 chars" />
+
+      <!-- Confirm password input -->
+      <label>Confirm Password</label>
+      <input type="password" id="repass" placeholder="Same again" />
+
+      <!-- Experience level options -->
+      <div class="skills-section">
+        <h2>Level</h2>
+        <label><input type="radio" name="lvl" /> Junior</label>
+        <label><input type="radio" name="lvl" /> Mid</label>
+        <label><input type="radio" name="lvl" /> Senior</label>
+      </div>
+
+      <!-- Skills checkboxes -->
+      <div class="skills-section">
+        <h2>Skills</h2>
+        <label><input type="checkbox" /> HTML</label>
+        <label><input type="checkbox" /> JS</label>
+        <label><input type="checkbox" /> React</label>
+        <label><input type="checkbox" /> Java</label>
+      </div>
+
+      <!-- Submit and Reset buttons -->
+      <div class="button-group">
+        <button class="submit-btn" type="submit">Send</button>
+        <button class="reset-btn" type="reset">Clear</button>
+      </div>
+
+    </form>
+  </div>
+
+  <!-- Link to JS file -->
+  <script src="script.js"></script>
+</body>
+
+</html>
