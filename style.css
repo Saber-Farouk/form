@@ -1,0 +1,163 @@
+/* Theme Variables */
+:root {
+  --bg-color: #f2f3f5;
+  --form-bg: #fff;
+  --text-color: #222;
+  --input-bg: #f7f7f7;
+  --btn-color: #1a73e8;
+  --btn-hover: #155ec4;
+  --label-color: #555;
+  --border-radius: 10px;
+}
+
+/* Dark mode theme */
+body.dark-mode {
+  --bg-color: #121212;
+  --form-bg: #1e1e1e;
+  --text-color: #f5f5f5;
+  --input-bg: #2a2a2a;
+  --btn-color: #4e9eff;
+  --btn-hover: #317bd3;
+  --label-color: #ccc;
+}
+
+/* Basic Reset and Smooth Transition */
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  margin: 0;
+  padding: 0;
+}
+
+/* General Page Style */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Form Styling */
+.form {
+  background-color: var(--form-bg);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+/* Label and Input Styling */
+label {
+  font-size: 15px;
+  color: black;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  padding: 12px 15px;
+  font-size: 15px;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+}
+
+input:focus {
+  outline: 2px solid var(--btn-color);
+}
+
+/* Skills Section */
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.skills-section h2 {
+  font-size: 16px;
+  color: var(--label-color);
+  margin-bottom: 5px;
+}
+
+.skills-section label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Dark Mode Toggle */
+.toggle-mode {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.toggle-mode button {
+  padding: 8px 16px;
+  background-color: var(--btn-color);
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.toggle-mode button:hover {
+  background-color: var(--btn-hover);
+}
+
+/* Submit and Reset Buttons */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.submit-btn,
+.reset-btn {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+}
+
+.submit-btn {
+  background-color: var(--btn-color);
+}
+
+.submit-btn:hover {
+  background-color: var(--btn-hover);
+}
+
+.reset-btn {
+  background-color: #006ce7;
+}
+
+.reset-btn:hover {
+  background-color: #2840c6;
+}
